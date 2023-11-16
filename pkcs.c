@@ -86,7 +86,6 @@ void rsa_generate_key(void *_e, void *_d, void *_n, int mode)
      */
     mpz_clears(p, q, p_1, q_1, lambda, e, d, n, gcd, NULL);
 }
-}
 
 /*
  * rsa_cipher() - compute m^k mod n
@@ -135,6 +134,7 @@ static int rsa_cipher(void *_m, const void *_k, const void *_n)
  */
 int rsaes_oaep_encrypt(const void *m, size_t mLen, const void *label, const void *e, const void *n, void *c, int sha2_ndx)
 {
+	
 }
 
 /*
